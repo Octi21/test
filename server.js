@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 const { initializeApp } = require('firebase/app');
-const { getDatabase, ref, get } = require('firebase/database'); // Import the 'ref' function
+const { getDatabase, ref, get } = require('firebase/database');
 
 
 const firebaseConfig = {
