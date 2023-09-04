@@ -16,6 +16,8 @@ const firebaseConfig = {
   measurementId: "G-VKZNL0XJ68"
 };
 
+
+
 const firebaseApp = initializeApp(firebaseConfig);
 const database = getDatabase(firebaseApp);
 
@@ -189,6 +191,12 @@ app.get('/movies/tag', async(req,res) =>{
 });
 
 
+// Request example:
+// http://localhost:3001/users
+// http://localhost:3001/user?userId=user3
+// http://localhost:3001/movies
+// http://localhost:3001/movies/tag?tag=tag10
+// http://localhost:3001/movies/category?category=Drama
 
 
 app.listen(3001, () => {
